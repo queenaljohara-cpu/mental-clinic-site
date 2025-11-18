@@ -157,10 +157,11 @@
             </p>
 
             <form onsubmit="return confirmAgreement()">
-                <label style="display:flex; align-items:center; justify-content:center; gap:10px;">
-                    <input type="checkbox" id="agreeCheckbox">
-                    <span>I agree to the Ethical User Agreement</span>
-                </label>
+               <div class="checkbox-wrapper">
+    <input type="checkbox" id="agreeCheckbox">
+    <label for="agreeCheckbox">I agree to the Ethical User Agreement</label>
+</div>
+
 
                 <button type="submit" class="btn" style="margin-top:1rem;">Continue</button>
             </form>
@@ -194,3 +195,4 @@
 
 </body>
 </html>
+
