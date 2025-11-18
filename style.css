@@ -141,3 +141,24 @@ select:focus {
 
 .card {
     ba
+.agreement-page .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1rem;
+}
+
+.agreement-page .checkbox-wrapper input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.agreement-page .checkbox-wrapper label {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #2e3a59;
+    font-weight: 500;
+}
+
