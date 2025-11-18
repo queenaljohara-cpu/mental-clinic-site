@@ -1,28 +1,29 @@
-/* Global styles */
+/* ==== GLOBAL ==== */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #f5f7fb;
-    color: #222;
-    line-height: 1.6;
+    background: #f3f6fb;
+    color: #1d1d1d;
+    line-height: 1.7;
 }
 
 .container {
     width: 90%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: auto;
 }
 
-/* Header & navigation */
+/* ==== HEADER ==== */
 header {
-    background: #1f3b57;
-    color: #fff;
+    background: #3b5c9a;
+    color: white;
     padding: 1rem 0;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
 
 .nav-container {
@@ -34,232 +35,109 @@ header {
 .logo {
     font-size: 1.4rem;
     font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 nav a {
-    color: #dfe9f5;
-    text-decoration: none;
     margin-left: 1rem;
-    font-size: 0.95rem;
-    padding-bottom: 0.2rem;
+    color: #e7ecf7;
+    text-decoration: none;
+    padding-bottom: 4px;
     border-bottom: 2px solid transparent;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    border-color: #9fc5ff;
+    border-color: #ffffff;
 }
 
 nav a.active {
-    border-color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
-/* Hero section */
+/* ==== HERO SECTION ==== */
 .hero {
+    margin: 3rem 0;
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
-    margin: 2rem 0;
-    align-items: start;
 }
 
 .hero-text h2 {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
+    font-size: 2.3rem;
+    color: #2e3a59;
+    margin-bottom: 1rem;
 }
 
 .hero-text p {
+    max-width: 500px;
+    color: #4a4a4a;
     margin-bottom: 1.5rem;
-    max-width: 34rem;
 }
 
 .hero-box {
-    background: #ffffff;
+    background: white;
     padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.06);
 }
 
 .hero-box h3 {
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
-/* Forms & inputs */
-form {
-    margin-top: 0.75rem;
+/* ==== BUTTONS ==== */
+.btn {
+    display: inline-block;
+    padding: 0.65rem 1.3rem;
+    border-radius: 30px;
+    background: #3b5c9a;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
 }
 
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn.secondary {
+    background: #2b3e66;
+}
+
+/* ==== INPUTS ==== */
 label {
+    margin-top: 1rem;
     display: block;
-    font-size: 0.9rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0.2rem;
+    font-weight: 500;
 }
 
 input,
 select {
     width: 100%;
-    padding: 0.5rem 0.6rem;
-    border-radius: 0.4rem;
-    border: 1px solid #cfd7e6;
-    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid #cdd6e8;
+    transition: 0.2s;
 }
 
 input:focus,
 select:focus {
+    border-color: #3b5c9a;
     outline: none;
-    border-color: #4c7ad9;
-    box-shadow: 0 0 0 1px rgba(76, 122, 217, 0.35);
+    box-shadow: 0px 0px 4px rgba(59,92,154,0.3);
 }
 
-/* Buttons / links */
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.6rem 1.1rem;
-    border-radius: 999px;
-    border: none;
-    cursor: pointer;
-    font-size: 0.95rem;
-    font-weight: 600;
-    background: #4c7ad9;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.btn.secondary {
-    background: #1f3b57;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
-
-.link {
-    display: inline-block;
-    margin-top: 0.6rem;
-    font-size: 0.9rem;
-    color: #1f3b57;
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
-/* Cards on home page */
+/* ==== CARDS ==== */
 .cards {
+    margin: 2rem 0 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 2.5rem;
 }
 
 .card {
-    background: #ffffff;
-    border-radius: 0.75rem;
-    padding: 1.3rem;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
-}
-
-.card h3 {
-    margin-bottom: 0.5rem;
-}
-
-/* Page headers */
-.page-header {
-    margin: 2rem 0 1rem;
-}
-
-.page-header h2 {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Two-column layout */
-.two-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Lists */
-.list {
-    margin-left: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.list li {
-    margin-bottom: 0.35rem;
-}
-
-/* Info box */
-.info-box {
-    background: #e4efff;
-    border-radius: 0.75rem;
-    padding: 1.2rem 1.4rem;
-    margin-bottom: 2.5rem;
-}
-
-/* Agreement section */
-.agreement-section h3 {
-    margin-top: 1.3rem;
-    margin-bottom: 0.3rem;
-}
-
-.agreement-section p {
-    margin-top: 0.4rem;
-}
-
-.agreement-form {
-    margin-top: 1.4rem;
-}
-
-.checkbox-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.checkbox-row input {
-    width: auto;
-    margin-top: 0.2rem;
-}
-
-/* Footer */
-footer {
-    background: #1f3b57;
-    color: #dfe9f5;
-    padding: 0.9rem 0;
-    margin-top: 2rem;
-}
-
-.footer-content {
-    text-align: center;
-    font-size: 0.85rem;
-}
-
-/* Small text */
-.small {
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 0.25rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
-    nav a {
-        margin-left: 0.6rem;
-        font-size: 0.85rem;
-    }
-
-    .logo {
-        font-size: 1.1rem;
-    }
-}
+    ba
