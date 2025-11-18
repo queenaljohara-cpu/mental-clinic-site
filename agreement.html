@@ -5,7 +5,64 @@
     <title>Ethical User Agreement – CalmMind Clinic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* تحسينات خاصة بصفحة الإيثيكل فقط */
+
+        .agreement-section {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+
+        .agreement-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2e3a59;
+        }
+
+        .line {
+            width: 60px;
+            height: 4px;
+            background: #3b5c9a;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+
+        .policy-box {
+            background: #f3f6fc;
+            padding: 1rem 1.3rem;
+            border-radius: 12px;
+            margin-bottom: 1.3rem;
+            border-left: 4px solid #3b5c9a;
+        }
+
+        .policy-box h4 {
+            margin-bottom: 0.5rem;
+            color: #2e3a59;
+        }
+
+        .policy-box ul {
+            margin-left: 1.2rem;
+        }
+
+        .policy-box ul li {
+            margin-bottom: 0.35rem;
+        }
+
+        .agreement-form {
+            margin-top: 1.5rem;
+            background: #eef1fa;
+            padding: 1.5rem;
+            border-radius: 14px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
@@ -20,81 +77,101 @@
 </header>
 
 <main class="container">
+    
     <section class="page-header">
         <h2>Ethical User Agreement</h2>
-        <p>
-            Before completing your booking request, you must read and agree to the terms below.
-            These conditions ensure privacy, confidentiality, and ethical use of our system.
+        <p style="max-width: 700px;">
+            Before completing your booking request, you must agree to the following terms to ensure privacy,
+            confidentiality, ethical communication, and responsible system use.
         </p>
     </section>
 
     <section class="agreement-section">
 
-        <h3>1. Privacy and Confidentiality</h3>
-        <ul class="list">
-            <li>All personal information provided is confidential.</li>
-            <li>Our clinic uses secure systems to protect electronic records.</li>
-            <li>Sharing patient data without consent is prohibited.</li>
-        </ul>
+        <div class="agreement-title">Agreement Policies</div>
+        <div class="line"></div>
 
-        <h3>2. Accurate and Honest Information</h3>
-        <ul class="list">
-            <li>Users must provide correct and honest information.</li>
-            <li>Impersonation or false identity is not allowed.</li>
-        </ul>
+        <!-- القسم 1 -->
+        <div class="policy-box">
+            <h4>1. Privacy & Confidentiality</h4>
+            <ul>
+                <li>All personal information is treated as confidential.</li>
+                <li>Electronic records are protected using secure systems.</li>
+                <li>No sharing of patient data without consent.</li>
+            </ul>
+        </div>
 
-        <h3>3. Responsible Use of Technology</h3>
-        <ul class="list">
-            <li>No attempts to hack or disrupt the website.</li>
-            <li>No harmful content or malware may be sent.</li>
-            <li>The system is to be used ethically and legally.</li>
-        </ul>
+        <!-- القسم 2 -->
+        <div class="policy-box">
+            <h4>2. Accurate Information</h4>
+            <ul>
+                <li>Users must provide correct and honest information.</li>
+                <li>Impersonation or fake identities are forbidden.</li>
+            </ul>
+        </div>
 
-        <h3>4. Respectful Communication</h3>
-        <ul class="list">
-            <li>All messages to staff must be respectful.</li>
-            <li>Hate speech or harassment is not tolerated.</li>
-        </ul>
+        <!-- القسم 3 -->
+        <div class="policy-box">
+            <h4>3. Responsible System Use</h4>
+            <ul>
+                <li>No attempts to hack, modify or damage the system.</li>
+                <li>No harmful or abusive content may be sent.</li>
+                <li>The system is used for ethical and legal purposes only.</li>
+            </ul>
+        </div>
 
-        <h3>5. Data Protection and Security</h3>
-        <ul class="list">
-            <li>Your data is never sold or shared unlawfully.</li>
-            <li>Access is restricted to authorized personnel only.</li>
-            <li>Users must protect their own devices.</li>
-        </ul>
+        <!-- القسم 4 -->
+        <div class="policy-box">
+            <h4>4. Respectful Communication</h4>
+            <ul>
+                <li>Communication must be respectful and professional.</li>
+                <li>Hate speech or harassment is not allowed.</li>
+            </ul>
+        </div>
 
-        <h3>6. Limitations and Emergency Cases</h3>
-        <ul class="list">
-            <li>This website is not an emergency service.</li>
-            <li>Call local emergency numbers in dangerous situations.</li>
-        </ul>
+        <!-- القسم 5 -->
+        <div class="policy-box">
+            <h4>5. Data Protection</h4>
+            <ul>
+                <li>Your data will never be sold or misused.</li>
+                <li>Access is restricted to authorized staff only.</li>
+                <li>Users must secure their own devices.</li>
+            </ul>
+        </div>
 
-        <h3>7. Agreement Confirmation</h3>
-        <p>
-            To proceed with your booking, please confirm that you have read and agree to
-            the Ethical User Agreement.
-        </p>
+        <!-- القسم 6 -->
+        <div class="policy-box">
+            <h4>6. Emergency Cases</h4>
+            <ul>
+                <li>This website is not an emergency service.</li>
+                <li>Contact local emergency numbers for urgent situations.</li>
+            </ul>
+        </div>
 
-        <form class="agreement-form" onsubmit="return confirmAgreement()">
+        <!-- تأكيد -->
+        <div class="agreement-form">
+            <h3>Final Confirmation</h3>
+            <p>Please confirm that you have read and agree to the Ethical User Agreement.</p>
 
-            <label class="checkbox-row">
-                <input type="checkbox" id="agreeCheckbox">
-                <span>I have read and agree to the Ethical User Agreement.</span>
-            </label>
+            <form onsubmit="return confirmAgreement()">
+                <label style="display:flex; align-items:center; justify-content:center; gap:10px;">
+                    <input type="checkbox" id="agreeCheckbox">
+                    <span>I agree to the Ethical User Agreement</span>
+                </label>
 
-            <button type="submit" class="btn">Continue</button>
+                <button type="submit" class="btn" style="margin-top:1rem;">Continue</button>
+            </form>
 
-            <p class="small">
-                *This is a demo simulation for academic purposes only.
-            </p>
-        </form>
+            <p class="small" style="margin-top:0.5rem;">*This is a simulation for academic purposes only.</p>
+        </div>
 
     </section>
+
 </main>
 
 <footer>
     <div class="container footer-content">
-        <p>&copy; 2025 CalmMind Mental Health Clinic – Academic Project (IT420 Computer Ethics)</p>
+        <p>&copy; 2025 CalmMind Mental Health Clinic – Academic Project (IT420)</p>
     </div>
 </footer>
 
@@ -107,7 +184,6 @@
             return false;
         }
 
-        // إذا وافق → صفحة الشكر
         window.location.href = "thankyou.html";
         return false;
     }
